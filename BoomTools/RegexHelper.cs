@@ -16,7 +16,6 @@ namespace BoomTools
         /// <returns></returns>
         public static bool IsChinese(string content)
         {
-            //汉字
             Regex reg = new Regex(@"^[\u4e00-\u9fa5]{0,}$");
             return reg.IsMatch(content);
         }
